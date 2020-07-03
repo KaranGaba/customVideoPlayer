@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <!--Video by mixkit.co-->
+    <video src="https://assets.mixkit.co/videos/preview/mixkit-fireworks-illuminating-the-beach-sky-4157-large.mp4" class="video"></video>
+    <div class="controls">
+      <button class="playPauseBtn" title=Play/Pause><i class="fas fa-play"></i></button>
+      <button class="stop" title="Stop"><i class="fas fa-stop"></i></button>
+      <input type="range" class="slider" value="0" />
+      <p class="timer">00:00</p>
+      <button class="loop loop-off" title="Loop Video"><i class="fas fa-redo"></i></button>
+      <button class="expand" title="full screen"><i class="fas fa-expand"></i></button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  width: 70%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.controls {
+  width: 70%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background: #505050;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.controls * {
+  margin: 0 2px;
+  padding: 1px;
+}
+.slider {
+  width: 100%;
+  height: 0.5rem;
+}
+.timer {
+  color: #f4f4f4;
+}
+.controls button {
+  background: transparent;
+  color: #f4f4f4;
+  border: none;
+}
+.controls .playPauseBtn {
+  color: #30ff30;
+}
+.controls .stop {
+  color: #ff3030;
+}
+.loop.loop-on {
+  color: #a9a9ff;
+}
+i {
+  pointer-events: none;
+}
+button,
+input[type="range"] {
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .video,
+  .controls {
+    width: 90%;
+  }
+}
